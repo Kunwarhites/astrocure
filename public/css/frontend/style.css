@@ -1,0 +1,1439 @@
+/* ======================== Font Import start here ==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+
+/* ======================== Font Import End here ==========================*/
+* {
+    font-family: 'Philosopher', sans-serif;
+}
+
+/* ======================== Scrollbar start here ==========================> */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff7010;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff7010;
+}
+
+
+/* ======================== Scrollbar End here ==========================> */
+/* ======================== Header start here ==========================> */
+div#marginset {
+    margin-bottom: 130px;
+}
+
+header#astroheader {
+    position: fixed;
+    width:100%;
+    top: 0;
+    z-index: 960;
+    height: 130px;
+    background: #07273c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+    border-bottom: 2px solid #ff7010;
+}
+
+.al-logo-wrap {
+    border-right: 2px solid #383535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+}
+
+.al-logo-wrap img#logo-astro {
+    width: 90%;
+}
+
+.al-menu-wrap {
+    width: 84%;
+}
+
+.astro-right-top {
+    width: 100%;
+    /* background: red; */
+    border-bottom: 2px solid #383535;
+    height: 50px;
+    padding-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i#al-infoicon {
+    width: 40px;
+    height: 40px;
+    background-color: #221e5ac2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 0 0 0;
+}
+
+i#loginssss {
+    width: 40px;
+    height: 40px;
+    background-color: #221e5ac2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 0 0 0;
+}
+
+.astro-right-bottom {
+    width: 100%;
+    /* background: blue; */
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+a#nav-login:hover {
+    color: #ff7010;
+}
+
+a#nav-regis:hover {
+    color: #ff7010;
+}
+
+a.nav-link {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+li:hover a.nav-link {
+    transition: .5s all ease-in-out;
+    color: #ff7010;
+}
+
+i#bars-menu {
+    display: none;
+}
+
+.submenu {
+    width: 160px;
+    display: none;
+    position: absolute;
+    background-color: #09334e;
+    padding: 10px;
+    list-style: none;
+    transition: .5s all ease-in-out;
+}
+.submenu li {
+    margin: 8px 4px 4px 4px;
+}
+.submenu li a{
+    margin: 4px;
+    text-decoration: none;
+    color: #fff;
+}
+.submenu li:hover a{
+    color: #ff7010;
+
+}
+.nav-item:hover .submenu {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+
+    span#tta {
+        display: none;
+    }
+
+    i#bars-menu {
+        width: 40px;
+        height: 40px;
+        background-color: #221e5ac2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 50%;
+        margin: 0 0 0 0;
+
+    }
+
+    ul#navbs {
+        display: block;
+        position: absolute;
+        padding-top: 15px;
+        top: 0px;
+        left: -250px;
+        background-color: #07273c;
+        width: 250px;
+        height: 100vh;
+        transition: .5s all ease-in-out;
+        z-index: 980;
+    }
+
+    ul#navbs li.nav-item {
+        border-bottom: 1px solid #4b6d837d;
+    }
+
+    ul#navbs a.nav-link {
+        font-size: 1rem;
+        padding: 6px 15px;
+        font-weight: 500;
+    }
+
+    #backgroundBox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background */
+        z-index: 979;
+        /* Ensure it's on top of everything */
+    }
+
+    i.fa-solid.fa-magnifying-glass {
+        font-size: 1.3rem;
+    }
+    i#loginssss {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+
+    i#al-infoicon {
+        display: none;
+    }
+
+    .al-logo-wrap {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .al-menu-wrap {
+        width: 70%;
+    }
+
+    div#unique-lor {
+        /* background: red; */
+        width: 30%;
+        position: absolute;
+        top: 69px;
+    }
+
+    a#nav-login {
+        display: none;
+    }
+
+    a#nav-regis {
+        display: none;
+    }
+
+    div#supports {
+        position: relative;
+        top: 2px;
+    }
+
+    .astro-right-top {
+        border: none;
+    }
+
+    i.fa-solid.fa-magnifying-glass {
+        font-size: 1.3rem;
+    }
+    i#loginssss {
+        display: none;
+    }
+    a#nav-regis {
+        display: block;
+        position: absolute;
+        right: -37px;
+        top: 0px;
+    }
+    a#nav-login {
+        display: block;
+        position: absolute;
+        left: -5px;
+        top:0px;
+    }
+}
+
+/* ======================== Header End here ==========================> */
+
+/* ======================== Main Banner Start here ==========================> */
+
+
+section#main-banner {
+    width: 100%;
+    /* height: 78vh; */
+    background-image: linear-gradient(to bottom, rgba(0, 33, 73, 0.568), rgb(2 2 2)), url('/img/banner/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.col-md-6>img#main-style {
+    width: 60%;
+    animation: circle 10s linear infinite;
+}
+div#carouselphone {
+    display: none;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main-left {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h4#oragn {
+    color: #ff7010;
+    font-family: 'Philosopher', sans-serif;
+}
+
+h2#rydht {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 3.5rem;
+}
+
+button.read-more {
+    width: 134px;
+    height: 40px;
+    background-color: #ff7010;
+    color: white;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 772px) {
+    div#carouseldesktop {
+        display: none;
+    }
+    div#carouselphone {
+        display: block;
+    }
+    section#main-banner {
+        padding: 0px;
+    }
+
+    div#rowmain {
+        flex-direction: column-reverse;
+    }
+
+    img#main-style {
+        width: 70% !important;
+    }
+
+    .main-left {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2#rydht {
+        font-size: 2rem;
+    }
+
+}
+
+/* ======================== Main Banner End here ==========================> */
+
+
+/* ======================== Know about Start here ==========================> */
+
+
+section#know-about {
+    background-image: url('/img/banner/knowabout.jpg') !important;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17px 80px;
+    box-sizing: border-box;
+
+}
+
+h2#head-know {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 500;
+    padding-bottom: 9px;
+    border-bottom: 4px solid #ff7010;
+    width: 185px;
+    margin-bottom: 20px;
+}
+
+a.read-more {
+    width: 134px;
+    height: 40px;
+    background-color: #ff7010;
+    color: white;
+    margin-top: 10px;
+    border-radius: 0px !important;
+}
+
+p#para-know {
+    line-height: 29px;
+}
+
+.contact {
+    width: 435px;
+    background: #194d70c2;
+    color: #ff7010;
+    margin-top: 37px;
+    padding: 21px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+div#contane-id {
+    padding: 51px;
+}
+
+.con-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -48px;
+    border: 4px dotted #ff7010;
+    animation: circle 10s linear infinite;
+    cursor: pointer;
+
+}
+
+i#contact-icon-know {
+    width: 80px;
+    height: 80px;
+    background-color: #ff7010;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: -18px; */
+}
+
+h5#cont-head {
+    padding-left: 111px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+a.head-con {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 117px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ff7010;
+}
+
+.owl-carousel {
+
+    -webkit-box-shadow: -66px 43px 0px 0px rgba(23, 56, 78, 1);
+    -moz-box-shadow: -66px 43px 0px 0px rgba(23, 56, 78, 1);
+    box-shadow: -66px 43px 0px 0px rgba(23, 56, 78, 1);
+}
+
+.owl-dots {
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: 34px;
+    left: -57px;
+}
+
+@media screen and (max-width: 772px) {
+    section#know-about {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .owl-carousel {
+        -webkit-box-shadow: -23px -13px 0px 0px rgba(23, 56, 78, 1);
+        -moz-box-shadow: -23px 13px 0px 0px rgba(23, 56, 78, 1);
+        box-shadow: -23px 12px 0px 0px rgba(23, 56, 78, 1);
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    div#contane-id {
+        padding: 10px;
+    }
+
+    div#contac-right {
+        margin-top: 50px;
+    }
+
+    .owl-dots {
+        left: -49px;
+    }
+
+    .owl-dots {
+        position: absolute;
+        transform: rotate(90deg);
+        bottom: 34px;
+        left: -49px;
+    }
+
+    a.head-con {
+        font-size: 18px;
+    }
+
+    .con-icon {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -62px;
+        border: 4px dotted #ff7010;
+        animation: circle 10s linear infinite;
+        cursor: pointer;
+        margin-left: -9px;
+    }
+}
+
+/* ======================== Know about End here ==========================> */
+
+/* ======================== Our Service Start here ==========================> */
+section#service {
+    background-color: #031d2e;
+    color: #fff;
+    padding: 20px;
+}
+
+h1.text-title {
+    font-family: 'Philosopher', sans-serif;
+    position: relative;
+
+}
+
+.text-title::after {
+    position: absolute;
+    content: '';
+    width: 18%;
+    border-bottom: 3px solid #ff7010;
+    top: 10px;
+    left: 41%;
+    bottom: -5px;
+    right: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+div#text-adp {
+    padding: 0px 200px;
+    margin: 15px 0px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 16px;
+}
+
+div#cardsss {
+    background-color: #07273c;
+}
+
+i#service-logo {
+    font-size: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #094972;
+    border-radius: 50%;
+    padding: 20px;
+    position: relative;
+    margin-left: 115px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+i#service-logo::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-bottom: 3px dotted #ff7010;
+    border-radius: 50%;
+
+}
+
+.service-title {
+    font-family: 'Philosopher', sans-serif;
+    position: relative;
+}
+
+hr#service-hr {
+    width: 143px;
+    border-bottom: 3px solid #ff7010;
+    opacity: 1;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a.service-read {
+    color: #ff7010;
+}
+
+div#cardsss {
+    background-color: #07273c;
+    height: max-content;
+    /* padding: 41px 0px; */
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 772px) {
+
+    div#text-adp {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin: 15px 0px;
+    }
+}
+
+/* ======================== Our Service End here ==========================> */
+
+
+/* ======================== Our Team Start here ==========================> */
+section#our-team {
+    background-image: url('/img/banner/knowabout.jpg') !important;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17px 80px;
+    box-sizing: border-box;
+    /* height: 80vh; */
+}
+
+.team-card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+
+}
+
+.page-left-shadow {
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    float: left;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s all ease;
+}
+
+.team-card:hover .page-left-shadow {
+    width: 20%;
+}
+
+.page-left-shadow i {
+    color: #fff;
+    font-size: 35px;
+    margin: 10px auto;
+    /* opacity: 0; */
+    display: none;
+    transition: .5s all ease;
+}
+
+.team-card:hover .page-left-shadow i {
+    display: block;
+
+}
+
+.page-left-shadow i:hover {
+    color: #ff7010;
+}
+
+.page-right-shadow {
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    float: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s all ease;
+}
+
+.team-card:hover .page-right-shadow {
+    width: 80%;
+}
+
+.page-right-shadow h4 {
+    color: #fff;
+    font-size: 23px;
+    font-family: 'Philosopher', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: none;
+    transition: .5s all ease;
+}
+
+.team-card:hover .page-right-shadow h4 {
+    display: block;
+}
+
+.page-right-shadow h6 {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Philosopher', sans-serif;
+    display: none;
+
+    transition: .5s all ease;
+}
+
+.team-card:hover .page-right-shadow h6 {
+    display: block;
+
+}
+
+a.team-read {
+    width: 134px;
+    height: 40px;
+    background-color: #ff7010;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 0px !important;
+}
+
+@media screen and (max-width: 772px) {
+
+    section#our-team {
+        padding: 15px 5px;
+    }
+
+    .team-card {
+        height: 340px;
+    }
+
+
+}
+
+/* ======================== Our Team End here ==========================> */
+
+/* ======================== Our Latest Blog start here ==========================> */
+section#our-latest-blog {
+    background-color: #031d2e;
+    padding: 17px 180px;
+    box-sizing: border-box;
+}
+
+h5#text-blog {
+    line-height: 33px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 772px) {
+
+    section#our-latest-blog {
+        padding: 17px;
+    }
+
+    div#blog-phon .col-md-6 {
+        width: 50%;
+    }
+}
+
+/* ======================== Our Latest Blog End here ==========================> */
+
+
+/* ======================== Login Start here ==========================> */
+section#title-section {
+    background-color: #031a2a;
+    text-align: center;
+    padding: 27px 180px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+h1#account-detal-head {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.sub-title-detail {
+    background: #0a344feb;
+    border-radius: 100px;
+    /* padding: 10px; */
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    position: relative;
+    font-size: 1.1rem;
+    max-width: fit-content;
+    margin: 10px auto;
+}
+
+.sub-title-detail a {
+    color: #ff7010;
+    text-decoration: none;
+}
+
+section#loginregister {
+    background-color: #07273c;
+    padding: 27px 180px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.login-card {
+    background-color: #09324c;
+    padding: 25px;
+    width: 100%;
+}
+.toggle-password {
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: -25px;
+}
+button.login {
+    width: 133px;
+    padding: 10px;
+    background-color: #ff7010;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 772px) {
+
+    section#title-section {
+        padding: 17px;
+    }
+
+    section#loginregister {
+        padding: 17px;
+    }
+}
+
+/* ======================== Login End here ==========================> */
+
+
+/* ======================== Service Details End here ==========================> */
+
+section#service-single {
+    background-color: #052e49;
+    padding: 10px 80px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+p.single-para {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+h1.servi-singleheading {
+    border-bottom: 3px solid #ff7010;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    width: max-content;
+}
+.col-md-5 img#service-singleimg {
+    margin-top: 40px;
+    width: 100%;
+}
+@media screen and (max-width: 772px) {
+
+    section#service-single {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    img#service-singleimg {
+    margin-top: 0px;
+        width: 100%;
+    }
+}
+
+/* ======================== Service Details here ==========================> */
+
+/* ======================== Events start here ==========================> */
+
+.events {
+    width: 100%;
+    display: block;
+    min-height: 100vh;
+    background-color: #052e49;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.events .events-filter {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events .events-filter .filter-item {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+.events .events-filter .filter-item.active {
+    color: #ff9800;
+    border-color: #ff9800;
+}
+
+.events .events-item {
+    width: calc(100% / 3);
+    padding: 10px;
+    /* height: 400px; */
+    /* border: 1px solid #133e67; */
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 27px;
+    /* margin-left: 62px; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.events .events-item-inner img {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.events .events-item span#date {
+    position: absolute;
+    top: 10px;
+    background-color: #ff7010;
+    padding: 10px;
+    color: #fff;
+
+}
+
+.events .events-item.show {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.events .events-item.hide {
+    display: none;
+}
+
+/*responsive*/
+@media(max-width: 991px) {
+    .events .events-item {
+        width: 50%;
+    }
+}
+
+@media(max-width: 767px) {
+    .events .events-item {
+        width: 100%;
+    }
+
+    .events .events-filter .filter-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* ======================== EVents End here ==========================> */
+
+
+/* ======================== EVents-detail Start here ==========================> */
+section#event-detail {
+    background-color: #052e49;
+    padding: 10px 80px;
+    box-sizing: border-box;
+    color: #fff;
+}
+div#bg-event-detail {
+    padding: 25px;
+    background: #031a2a;
+    color: #fff;
+    box-sizing: border-box;
+}
+img#img-singl-event {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.seat-box {
+    width: 100%;
+    background-color: #052e49;
+    padding: 20px;
+    border-radius: 10PX;
+    box-sizing: border-box;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.address {
+    width: 100%;
+    background-color: #052e49;
+    padding: 10px 20px;
+    border-radius: 10PX;
+    box-sizing: border-box;
+    font-weight: 500;
+    /* text-align: center; */
+    margin-bottom: 25px;
+}
+.address ul {
+    --icon-size: .8em;
+    --gutter: .5em;
+    padding: 0 0 0 var(--icon-size);
+  }
+
+  .address   ul li {
+    padding-left: var(--gutter);
+    font-size: 18px;
+  }
+
+  .address ul li::marker {
+    content: "\f0a9"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+
+    font-size: var(--icon-size);
+  }
+  .event-schedule {
+    width: 100%;
+    background-color: #052e49;
+    padding: 20px;
+    border-radius: 10PX;
+    box-sizing: border-box;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  .event-dates {
+    display: -webkit-inline-box;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    border-bottom: 2px dotted #fff;
+}
+div#data-col {
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+  i#event-icon {
+    width: 25px;
+    height: 25px;
+    background-color: #ff7010;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+}
+div#event-dtl {
+    margin: 10px;
+    background-color: #052e49;
+    width: 100%;
+    padding: 10px;
+    display: inline-flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.shareeevent{
+    width: 100%;
+    background-color: #052e49;
+    padding: 10px 20px;
+    border-radius: 10PX;
+    box-sizing: border-box;
+    font-weight: 500;
+    /* text-align: center; */
+    margin-bottom: 25px;
+    color: #fff;
+}
+i#share-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:#ff7010;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 772px) {
+
+    section#event-detail {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    img#img-singl-event {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* ======================== EVents-detail End here ==========================> */
+/* ======================== Testimonal Start here ==========================> */
+section#testimonial {
+    background-color: #031d2e;
+    padding: 30px;
+    box-sizing: border-box;
+}
+/* ======================== Testimonial End here ==========================> */
+
+/* ======================== BLogs Page Start here ==========================> */
+section#our-latest-blog-page {
+    background-color: #07273c;
+    padding: 17px 180px;
+    box-sizing: border-box;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #ff7010;
+    border-color: #ff7010;
+}
+@media screen and (max-width: 772px) {
+
+    section#our-latest-blog-page {
+        padding: 17px;
+    }
+
+}
+/* ========================BLogs Page End here ==========================> */
+
+/* ========================BLogs Single Page End here ==========================> */
+
+section#blog-single-detail{
+    background-color: #07273c;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.cardsb1 {
+    width: 100%;
+    background: #17384e;
+    padding:30px;
+    box-sizing: border-box;
+}
+input.oersonal-search {
+    width: 80%;
+    height: 44px;
+    border: 2px solid #14537c;
+    background: #14354b;
+    color: #fff;
+    border-radius: 0px;
+}
+input.oersonal-search::placeholder {
+    color: whitesmoke;
+}
+button.search-blogs {
+    width: 20%;
+    color: #fff;
+    background-color: #ff7010;
+    border: none;
+}
+ul#recentpost-ul {
+    padding-left: 18px;
+    list-style: square;
+
+}
+::marker {
+
+    color: #ff7010;
+}
+
+ul#recentpost-ul li {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 11px;
+    transition: .2s all ease-in-out;
+    line-height: 22px;
+}
+ul#recentpost-ul li:hover{
+    color: #ff7010;
+}
+img#blog-detail-img {
+    width: 770px;
+    height: 400px;
+}
+p#para-blogsingle{
+    text-align: justify;
+    padding: 0px 145px 0px 0px;
+}
+p#para-blogsingle {
+    text-align: justify;
+    padding: 0px 145px 0px 0px;
+    font-size: 18px;
+    color: #ffffffe0 !important;
+}
+.hidden-paragraph {
+    overflow: hidden;
+    max-height: 100px; /* Adjust this value to show half of the paragraph initially */
+    transition: max-height 0.3s ease-in-out;
+}
+
+.show-full-paragraph {
+    max-height: none;
+}
+a#read-more-button{
+    color: #ff7010;
+    cursor:pointer;
+    float:right;
+    padding-right:145px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 772px) {
+    section#blog-single-detail {
+        padding: 17px;
+    }
+    .cardsb1 {
+        width: 100%;
+    }
+    img#blog-detail-img {
+        width: 100%;
+        height: auto;
+    }
+    p#para-blogsingle{
+        /* text-align: justify;  */
+        padding: 0px;
+    }
+    div#blog-single-phon .col-md-6{
+        width: 50%;
+    }
+    div#phone-view-blogsingle {
+        flex-direction: column-reverse;
+    }
+    a#read-more-button{
+    padding: 0;
+    }
+}
+
+/* ========================BLogs Single  Page End here ==========================> */
+
+
+/* ========================appointment  Page End here ==========================> */
+section#appointment {
+    background-color: #07273c;
+    padding: 17px 180px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* ========================appointment  Page End here ==========================> */
+/* why choose us css start here */
+#choose-us{
+    background:#031D2E;
+    padding: 17px 110px;
+    box-sizing: border-box;
+}
+#choose-us h1{
+    width:250px;
+    font-size:35px;
+    font-family:'Philosopher', sans-serif;
+    border-bottom:3px solid #ff6900;
+
+}
+span.count-no {
+    position: absolute;
+    left: 43%;
+    top: 30%;
+}
+span.plus {
+    position: absolute;
+    left: 54%;
+    top: 30%;
+}
+#choose-us .container .col-md-7 .col-md-4 {
+    margin-top: 40px;
+    position: relative;
+}
+div#left-col-why {
+    padding: 149px 0px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 772px) {
+    section#appointment {
+        background-color: #07273c;
+        padding: 17px 12px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    div#app-col {
+        width: 25%;
+    }
+    section#choose-us {
+        width: 100%;
+        padding: 17px;
+        box-sizing: border-box;
+    }
+
+    h1#hwad {
+        margin-left: 22px;
+        margin-bottom: -6px;
+    }
+    div#left-col-why {
+        padding: 15px 19px;
+        text-align: center;
+    }
+    span.count-no {
+        position: absolute;
+        top: 53px;
+        left: 62px;
+    }
+}
+/* #################why choose us css end here############### */
+
+/* ========================COntact  Page Start here ==========================> */
+    section#contact{
+        background-color: #07273c;
+        padding: 27px 180px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    i#icon {
+        color: #fff;
+        margin-top: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #ff7010;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+@media screen and (max-width: 772px) {
+    section#contact {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+/* ========================COntact  Page End here ==========================> */
+/* ========================Back to Top Start here ==========================> */
+
+
+button#backToTopBtn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    z-index: 10;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ff7010;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+  button#backToTopBtn:hover {
+    background-color: #d55d0d;
+  }
+
+/* Feedback */
+#feedbackform input.form-control {
+    background: transparent;
+    color: #fff;
+}
+#feedbackform textarea.form-control{
+    background: transparent;
+    color: #fff;
+}
+.fa-star.selected {
+    color: gold; /* or any other color you prefer */
+}
+  div#feedback {
+    display: none;
+    width: 200px;
+    height: 35px;
+    z-index: 10;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 20px;
+    padding: 10px;
+    background-color: #ff7010;
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+  /* ========================Back to Top End here ==========================> */
+
